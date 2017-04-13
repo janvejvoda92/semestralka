@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?xml-stylesheet type="text/xsl" href="transformace.xsl"?>
+<save_hry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hra_save_jan_vejvoda.xsd">
+    <!--save 1-->
+    <hra jazyk="CS">
+        <o_savu>
+            <id>1</id>
+            <jmeno_postavy agrese="agresivni">Nicitel</jmeno_postavy>
+            <rasa schopnost="zvyseni_many">Svěetlý Elf</rasa>
+            <uroven titul="novic">19</uroven>
+            <datum_ulozeni>
+                <datum>2006-11-23</datum>
+                <cas>15:46:45</cas>
+            </datum_ulozeni>
+        </o_savu>
+        <nastaveni_hry>
+            <obtiznost>znalec</obtiznost>
+            <grafika>
+                <rozliseni>1920x1080</rozliseni>
+                <jas>6</jas>
+                <detail_krajiny>ultra</detail_krajiny>
+                <odraz_vody>ano</odraz_vody>
+                <kvalita_odrazu_vody>stredni</kvalita_odrazu_vody>
+                <dohled>20</dohled>
+            </grafika>
+            <zobrazeni>
+                <mnozstvi_ktve>velke</mnozstvi_ktve>
+                <kompas>ne</kompas>
+                <navigacni_kriz>ano</navigacni_kriz>
+                <mini_mapa>ano</mini_mapa>
+                <titulky>ano</titulky>
+            </zobrazeni>
+            <hudba>
+                <zvuky_uroven>15</zvuky_uroven>
+                <hudba_uroven>10</hudba_uroven>
+                <hlas_uroven>17</hlas_uroven>
+            </hudba>
+            <ovladani>
+                <mys>pravak</mys>
+                <citlivost_mysi>stredni</citlivost_mysi>
+                <klavesnice>qwertz</klavesnice>
+                
+            </ovladani>
+        </nastaveni_hry>
+        <postava>
+            <info_o_postave>
+                <sily_postavy>
+                    <zdravy_ak>150</zdravy_ak>
+                    <zdravy_cel obnova_zdravy="1.0">320</zdravy_cel>
+                    <mana_ak>200</mana_ak>
+                    <mana_cel obnova_many="1.0">200</mana_cel>
+                    <vydrz_ak>180</vydrz_ak>
+                    <vydrz_cel obnova_vydrze="1.0">200</vydrz_cel>
+                </sily_postavy>
+                <vyzbroj>
+                    <hlava>Lehka Elfi helma</hlava>
+                    <hrudnik odev_pod_zbroji="saty" vylepseni="vylepsena">Elfska zbroj</hrudnik>
+                    <ruce>Kozene rukavice</ruce>
+                    <boty vyska_bot="vysoke">Kozene boty</boty>
+                </vyzbroj>
+                <sperky>
+                    <krk>zlaty_privesek</krk>
+                    <ruce>stribrny_prsten</ruce>
+                    <hlava>N/</hlava>
+                </sperky>
+                <vyzbrojeni>
+                    <prava_ruka>kratky_mec</prava_ruka>
+                    <leva_ruka>ocelova_dyka</leva_ruka>
+                </vyzbrojeni>
+            </info_o_postave>
+            <data_postava>
+                <mince>682 zlatych</mince>
+                <titul postaveni="vazeny">n/</titul>
+                <povolani>kupec</povolani>
+                <aktivni_ukol faze_ukolu="2">prodej cenný predmet</aktivni_ukol>
+                <frakce>kralovstvi</frakce>
+                <hledany>ne</hledany>
+                <lokace>penvost zlomeného kamene</lokace>
+            </data_postava>
+        </postava>
+    </hra>
+    <!--save 2-->
+    <hra jazyk="CS">
+        <o_savu>
+            <id>2</id>
+            <jmeno_postavy agrese="agresivni">stín</jmeno_postavy>
+            <rasa schopnost="zvyseni_many">tmný Elf</rasa>
+            <uroven titul="novic">23</uroven>
+            <datum_ulozeni>
+                <datum>2005-04-16</datum>
+                <cas>10:12:12</cas>
+            </datum_ulozeni>
+        </o_savu>
+        <nastaveni_hry>
+            <obtiznost>zacatecnik</obtiznost>
+            <grafika>
+                <rozliseni>1920x1080</rozliseni>
+                <jas>6</jas>
+                <detail_krajiny>stredni</detail_krajiny>
+                <odraz_vody>ne</odraz_vody>
+                <kvalita_odrazu_vody>n/</kvalita_odrazu_vody>
+                <dohled>12</dohled>
+            </grafika>
+            <zobrazeni>
+                <mnozstvi_ktve>zadne</mnozstvi_ktve>
+                <kompas>ano</kompas>
+                <navigacni_kriz>ano</navigacni_kriz>
+                <mini_mapa>ne</mini_mapa>
+                <titulky>ne</titulky>
+            </zobrazeni>
+            <hudba>
+                <zvuky_uroven>10</zvuky_uroven>
+                <hudba_uroven>0</hudba_uroven>
+                <hlas_uroven>20</hlas_uroven>
+            </hudba>
+            <ovladani>
+                <mys>levak</mys>
+                <citlivost_mysi>nizka</citlivost_mysi>
+                <klavesnice>qwerty</klavesnice>  
+            </ovladani>
+        </nastaveni_hry>
+        <postava>
+            <info_o_postave>
+                <sily_postavy>
+                    <zdravy_ak>200</zdravy_ak>
+                    <zdravy_cel obnova_zdravy="1.0">250</zdravy_cel>
+                    <mana_ak>180</mana_ak>
+                    <mana_cel obnova_many="1.0">300</mana_cel>
+                    <vydrz_ak>200</vydrz_ak>
+                    <vydrz_cel obnova_vydrze="1.0">200</vydrz_cel>
+                </sily_postavy>
+                <vyzbroj>
+                    <hlava>n/</hlava>
+                    <hrudnik odev_pod_zbroji="saty" vylepseni="zakladni">Elfská zbroj</hrudnik>
+                    <ruce>citlivé rukavice</ruce>
+                    <boty vyska_bot="nizke">plátěné boty</boty>
+                </vyzbroj>
+                <sperky>
+                    <krk>přívěšek</krk>
+                    <ruce>zlatý prsten</ruce>
+                    <hlava>čelenka</hlava>
+                </sperky>
+                <vyzbrojeni>
+                    <prava_ruka>dlouhý nůž</prava_ruka>
+                    <leva_ruka>dlouhý nůž černý</leva_ruka>
+                </vyzbrojeni>
+            </info_o_postave>
+            <data_postava>
+                <mince>700 zlatých</mince>
+                <titul postaveni="vazeny">král zlodějů</titul>
+                <povolani>zloděj</povolani>
+                <aktivni_ukol faze_ukolu="6">špehování</aktivni_ukol>
+                <frakce>neutralni</frakce>
+                <hledany>ano</hledany>
+                <lokace>předměstí zářivé slzy</lokace>
+            </data_postava>
+        </postava>
+    </hra>
+</save_hry>
+
+
