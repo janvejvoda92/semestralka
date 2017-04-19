@@ -161,6 +161,235 @@ and open the template in the editor.
             </data_postava>
         </postava>
     </hra>
+    <!--save 3-->
+    <hra jazyk="CS">
+        <o_savu>
+            <id>3</id>
+            <jmeno_postavy agrese="pratelsky">vítr</jmeno_postavy>
+            <rasa schopnost="zvyseni_zdravi">člověk</rasa>
+            <uroven titul="zacatecnik">12</uroven>
+            <datum_ulozeni>
+                <datum>2007-08-03</datum>
+                <cas>23:32:01</cas>
+            </datum_ulozeni>
+        </o_savu>
+        <nastaveni_hry>
+            <obtiznost>mistr</obtiznost>
+            <grafika>
+                <rozliseni>1360x768</rozliseni>
+                <jas>12</jas>
+                <detail_krajiny>vysoke</detail_krajiny>
+                <odraz_vody>ano</odraz_vody>
+                <kvalita_odrazu_vody>stredni</kvalita_odrazu_vody>
+                <dohled>10</dohled>
+            </grafika>
+            <zobrazeni>
+                <mnozstvi_ktve>male</mnozstvi_ktve>
+                <kompas>ne</kompas>
+                <navigacni_kriz>ano</navigacni_kriz>
+                <mini_mapa>ne</mini_mapa>
+                <titulky>ano</titulky>
+            </zobrazeni>
+            <hudba>
+                <zvuky_uroven>20</zvuky_uroven>
+                <hudba_uroven>5</hudba_uroven>
+                <hlas_uroven>15</hlas_uroven>
+            </hudba>
+            <ovladani>
+                <mys>pravak</mys>
+                <citlivost_mysi>vysoka</citlivost_mysi>
+                <klavesnice>qwerty</klavesnice>  
+            </ovladani>
+        </nastaveni_hry>
+        <postava>
+            <info_o_postave>
+                <sily_postavy>
+                    <zdravy_ak>350</zdravy_ak>
+                    <zdravy_cel obnova_zdravy="1.3">250</zdravy_cel>
+                    <mana_ak>180</mana_ak>
+                    <mana_cel obnova_many="1.0">100</mana_cel>
+                    <vydrz_ak>200</vydrz_ak>
+                    <vydrz_cel obnova_vydrze="0.8">250</vydrz_cel>
+                </sily_postavy>
+                <vyzbroj>
+                    <hlava>n/</hlava>
+                    <hrudnik odev_pod_zbroji="saty" vylepseni="vylepsena">kožená zbroj</hrudnik>
+                    <ruce>kozene rukavice</ruce>
+                    <boty vyska_bot="vysoke">kozene boty</boty>
+                </vyzbroj>
+                <sperky>
+                    <krk>kozeny nahrdelnik</krk>
+                    <ruce>prsten</ruce>
+                    <hlava>nic</hlava>
+                </sperky>
+                <vyzbrojeni>
+                    <prava_ruka>luk</prava_ruka>
+                    <leva_ruka>luk</leva_ruka>
+                </vyzbrojeni>
+            </info_o_postave>
+            <data_postava>
+                <mince>100 zlatých</mince>
+                <titul postaveni="neb_postaveni"></titul>
+                <povolani>učeň</povolani>
+                <aktivni_ukol faze_ukolu="2">pomoc mistovy</aktivni_ukol>
+                <frakce>neutralni</frakce>
+                <hledany>ne</hledany>
+                <lokace>temný_les</lokace>
+            </data_postava>
+        </postava>
+    </hra>
+    <!--save 4-->
+    <hra jazyk="CS">
+        <o_savu>
+            <id>4</id>
+            <jmeno_postavy agrese="vznešeny">světlo</jmeno_postavy>
+            <rasa schopnost="zvyseni_many">člověk</rasa>
+            <uroven titul="znalec">34</uroven>
+            <datum_ulozeni>
+                <datum>2007-04-20</datum>
+                <cas>14:56:02</cas>
+            </datum_ulozeni>
+        </o_savu>
+        <nastaveni_hry>
+            <obtiznost>mistr</obtiznost>
+            <grafika>
+                <rozliseni>1600x900</rozliseni>
+                <jas>2</jas>
+                <detail_krajiny>nizke</detail_krajiny>
+                <odraz_vody>ne</odraz_vody>
+                <kvalita_odrazu_vody>n/</kvalita_odrazu_vody>
+                <dohled>9</dohled>
+            </grafika>
+            <zobrazeni>
+                <mnozstvi_ktve>zadne</mnozstvi_ktve>
+                <kompas>ne</kompas>
+                <navigacni_kriz>ne</navigacni_kriz>
+                <mini_mapa>ano</mini_mapa>
+                <titulky>ano</titulky>
+            </zobrazeni>
+            <hudba>
+                <zvuky_uroven>20</zvuky_uroven>
+                <hudba_uroven>06</hudba_uroven>
+                <hlas_uroven>15</hlas_uroven>
+            </hudba>
+            <ovladani>
+                <mys>pravak</mys>
+                <citlivost_mysi>stredni</citlivost_mysi>
+                <klavesnice>qwerty</klavesnice>  
+            </ovladani>
+        </nastaveni_hry>
+        <postava>
+            <info_o_postave>
+                <sily_postavy>
+                    <zdravy_ak>200</zdravy_ak>
+                    <zdravy_cel obnova_zdravy="1.0">200</zdravy_cel>
+                    <mana_ak>190</mana_ak>
+                    <mana_cel obnova_many="2.1">250</mana_cel>
+                    <vydrz_ak>200</vydrz_ak>
+                    <vydrz_cel obnova_vydrze="0.4">200</vydrz_cel>
+                </sily_postavy>
+                <vyzbroj>
+                    <hlava>n/</hlava>
+                    <hrudnik odev_pod_zbroji="nic" vylepseni="zakladni">kozeny odev</hrudnik>
+                    <ruce>nic</ruce>
+                    <boty vyska_bot="nizke">plátěné boty</boty>
+                </vyzbroj>
+                <sperky>
+                    <krk>přívěšek</krk>
+                    <ruce>prsten se smaragdem</ruce>
+                    <hlava>nic</hlava>
+                </sperky>
+                <vyzbrojeni>
+                    <prava_ruka>luk černy</prava_ruka>
+                    <leva_ruka>luk černý</leva_ruka>
+                </vyzbrojeni>
+            </info_o_postave>
+            <data_postava>
+                <mince>500 zlatých</mince>
+                <titul postaveni="zadne">pomocnik</titul>
+                <povolani>sluha</povolani>
+                <aktivni_ukol faze_ukolu="10">jídlo</aktivni_ukol>
+                <frakce>kralovstvi</frakce>
+                <hledany>ne</hledany>
+                <lokace>velká síň</lokace>
+            </data_postava>
+        </postava>
+    </hra>
+    <!--save 5-->
+    <hra jazyk="CS">
+        <o_savu>
+            <id>5</id>
+            <jmeno_postavy agrese="agresivni">mečer</jmeno_postavy>
+            <rasa schopnost="zvyseni_zdravi">Elf</rasa>
+            <uroven titul="znalec">29</uroven>
+            <datum_ulozeni>
+                <datum>2006-11-10</datum>
+                <cas>08:23:50</cas>
+            </datum_ulozeni>
+        </o_savu>
+        <nastaveni_hry>
+            <obtiznost>znalec</obtiznost>
+            <grafika>
+                <rozliseni>1920x1080</rozliseni>
+                <jas>6</jas>
+                <detail_krajiny>stredni</detail_krajiny>
+                <odraz_vody>ano</odraz_vody>
+                <kvalita_odrazu_vody>nizka</kvalita_odrazu_vody>
+                <dohled>10</dohled>
+            </grafika>
+            <zobrazeni>
+                <mnozstvi_ktve>zadne</mnozstvi_ktve>
+                <kompas>ano</kompas>
+                <navigacni_kriz>ano</navigacni_kriz>
+                <mini_mapa>ne</mini_mapa>
+                <titulky>ne</titulky>
+            </zobrazeni>
+            <hudba>
+                <zvuky_uroven>05</zvuky_uroven>
+                <hudba_uroven>10</hudba_uroven>
+                <hlas_uroven>20</hlas_uroven>
+            </hudba>
+            <ovladani>
+                <mys>levak</mys>
+                <citlivost_mysi>nizka</citlivost_mysi>
+                <klavesnice>qwerty</klavesnice>  
+            </ovladani>
+        </nastaveni_hry>
+        <postava>
+            <info_o_postave>
+                <sily_postavy>
+                    <zdravy_ak>300</zdravy_ak>
+                    <zdravy_cel obnova_zdravy="1.2">300</zdravy_cel>
+                    <mana_ak>100</mana_ak>
+                    <mana_cel obnova_many="0.8">100</mana_cel>
+                    <vydrz_ak>200</vydrz_ak>
+                    <vydrz_cel obnova_vydrze="1.0">250</vydrz_cel>
+                </sily_postavy>
+                <vyzbroj>
+                    <hlava>n/</hlava>
+                    <hrudnik odev_pod_zbroji="kozene_saty" vylepseni="vylepsene">Ocelova zbroj</hrudnik>
+                    <ruce>ocelové rukavice</ruce>
+                    <boty vyska_bot="vysoke">ocelové boty</boty>
+                </vyzbroj>
+                <sperky>
+                    <krk>nic</krk>
+                    <ruce>nic</ruce>
+                    <hlava>přilbyce</hlava>
+                </sperky>
+                <vyzbrojeni>
+                    <prava_ruka>obouruční meč</prava_ruka>
+                    <leva_ruka>obouruční meč</leva_ruka>
+                </vyzbrojeni>
+            </info_o_postave>
+            <data_postava>
+                <mince>700 zlatých</mince>
+                <titul postaveni="vazeny">rytíř</titul>
+                <povolani>rytíř</povolani>
+                <aktivni_ukol faze_ukolu="10">stráž</aktivni_ukol>
+                <frakce>kralovstvi</frakce>
+                <hledany>ne</hledany>
+                <lokace>síň králů</lokace>
+            </data_postava>
+        </postava>
+    </hra>
 </save_hry>
-
-
