@@ -1,16 +1,556 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="cs">
     <head>
         <title>Semestrální práce save hry</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Jan Vejvoda">
+        <style>
+           table, td, th { border: 1px solid gray } 
+        </style>
     </head>
     <body>
-        
-    </body>
+        <header>
+            <h1>Semestrální práce ze značkovacích jazyků</h1>
+            <nav>
+                <ul style="list-style-type:circle">
+                    <li><a href="#uvod">Úvod</a></li>
+                    <li><a href="#metodika">Metodika</a></li>
+                    <li><a href="#popisEleaAt">Popis elementů a atributů</a></li>
+                    <li><a href="#transformace">Popis transformace</a></li>
+                    <li><a href="#zaver">Závěr</a></li>
+                    <li><a href="#paticka">Paticka</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section id = "uvod">
+            <header>
+                <h2>Úvod</h2>
+            </header>
+            <article>
+                <h3>Úvod</h3>   
+                <p>
+                    Cílem projektu je představit herní save. Téma jsem si zvolil čistě ze své zvědavosti, a také proto, že spousta savů z her není ve standartně čitelných formátech. 
+                </p>
+                <p>
+                    V tomtu dokumentu budou popsány použité metody a nástroje při tvorbě tohotu projektu. Zárověň zde budou popsány základní důvody pro psaní projektu a stručný popis projektu. 
+                </p>
+                <p>
+                    Tento projekt by psán na základě zadá semestrální práce. Toto zadaní bylo Nastavení/konfigurace alpikace.   
+                </p>
+            </article>
+            <article>
+                <h3>Popis projektu</h3>
+                <p>
+                    Projekt se soustředí na xml seznam savu, které při jejich načtení do aplikací, nastaví vnitřní parametry aplikace tak aby odpovídala hráčského nastavení.
+                </p>
+                <p>
+                    Součástí projektu je XSD, XSL a HTML soubor.
+                </p>
+                <p>
+                    Projekt je dostupný a githubu.<br>
+                    <a href="https://github.com/janvejvoda92/semestralka">GitHub</a>
+                </p>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h2 id = "metodika">Metodika</h2>
+            </header>
+            <article>
+                <h3>Použité programy</h3>
+                <p>
+                    Pro tvorbu tohoto projektu jsem použil programy NetBeans IDE 8.0 a internetové prohlížeče Mozilla Firefox i Google Chrome. 
+                </p>
+            </article>
+            <article>
+                <h3>Využívané webové zdroje</h3>
+                <p>
+                    Většinu informací jsem čerpal ze stránek W3Schools a validaci tohoto dokumentu jsem provedl přes oficální validátor W3. 
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <h2 id = "popisEleaAt">Popis elementů a atributů</h2>
+            </header>
+            <article>
+                <h3>Úvod</h3>
+                <p>
+                    V této části jsou popsány použité elementy a atributy v projektu. Jednotlivé elementy a atributy jsou s popisem uvedeny v tabulce.
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h3 >Elementy</h3>
+                    <p>Popis použitých elementů</p>
+                </header>
+                <table style="width:100%" title="Tabulka elementů">
+                    <tr>
+                        <th>Element</th>
+                        <th>Popis</th>
+                        <th>Omezení pro element</th>
+                    </tr>
+                    <tr>
+                        <td>save_hry</td>
+                        <td>úvodní element zastřešující všechny savy hry</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>hra</td>
+                        <td>element zastřešuje celý herní save</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>o_savu</td>
+                        <td>Elemet zastřešující informace o konkrátní savu nachází se zde základní info (datum uložení atd.).</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Element popisuje id jednotlivých savů</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>jmeno_postavy</td>
+                        <td>Element popisuje jméno herní posty zapsané savu.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>rasa</td>
+                        <td>Element popisuje rasu postavy v herním savu.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>uroven</td>
+                        <td>Element popisuje uroven hráčské posty. tento prvek je jedním ze základních údajů ve hře</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>datum_ulozeni</td>
+                        <td>Element popisuje datum kdy by herní save vytvořen nebo akutualizován. Obalový element.</td>
+                        <td>žádný</td>
+                    </tr>
+                    <tr>
+                        <td>datum</td>
+                        <td>Element popisuje datum uložení hry.</td>
+                        <td>Datový typ DATE.</td>
+                    </tr>
+                    <tr>
+                        <td>cas</td>
+                        <td>Element popisuje čas uložení hry.</td>
+                        <td>Datový typ TIME</td>
+                    </tr>
+                    <tr>
+                        <td>nastaveni_hry</td>
+                        <td>Element je obalový. zastřššuje další elementy.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>obtiznost</td>
+                        <td>Element popisuje hráčem nastavenou obtížnost hry.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>grafika</td>
+                        <td>Element je obalový a zastřešuje několik elementů z oblasti grafiky.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>rozlišení</td>
+                        <td>Element popisuje nastavené rozlišení obrazu.</td>
+                        <td>
+                            omezeno těmito parametry:
+                            <ul>
+                                <li>1920x1080</li>
+                                <li>1600x900</li>
+                                <li>1360x768</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>jas</td>
+                        <td>Element popisuje nastavení jasu hry.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>detail_krajiny</td>
+                        <td>Element popisuje úroveň vykreslovaných detailů.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>odraz_vody</td>
+                        <td>Element popisuje aktivaci odrazu od vodní hladiny.</td>
+                        <td>omezeno na ANO nebo na NE</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_odrazu_vody</td>
+                        <td>Element popisuje úroveň vykreslení odrazu na vodě</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>dohled</td>
+                        <td>Element popisuje dohled postavy v herním světě. čím výší úroveň dohledu tím se dá útočit na větší vzdálenost.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>zobrazení</td>
+                        <td>Element je obalový a obsahuje několik elementů z oblasti herního zobrazení.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>mnozstvi_krve</td>
+                        <td>Element popisuje množství zobrazované krve ve hře.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>kompas</td>
+                        <td>Element popisuje možnost zobrazení kompasu ve hře.</td>
+                        <td>Omezeno na ANO nebo NE</td>
+                    </tr>
+                    <tr>
+                        <td>navigacni_kriz</td>
+                        <td>Element popisuje možnost zobrazení navigačního kříže. Navigační kříž umožňuje lepší zaměření cíle v boji.</td>
+                        <td>Omezeno na ANO nebo NE</td>
+                    </tr>
+                    <tr>
+                        <td>mini_mapa</td>
+                        <td>Element popisuje možnost zobrazení minimapy na herni obrazovce.</td>
+                        <td>Omezeno na ANO nebo NE</td>
+                    </tr>
+                    <tr>
+                        <td>titulky</td>
+                        <td>Element popisuje možnost zobrazení titulkům pro herni rozhovory.</td>
+                        <td>Omezeno na ANO nebo NE</td>
+                    </tr>
+                    <tr>
+                        <td>hudba</td>
+                        <td>Element je obalový a zahrnuje elementy z oblasti nastavení zvuků.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>zvuky_uroven</td>
+                        <td>Element popisuje nastavení úrovně hlasitosti herních zvuků.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>hudba_uroven</td>
+                        <td>Element popisuje nastavení úrovně hlasitosti herní hudby.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>hlas_uroven</td>
+                        <td>Element popisuje nastavení úrovně hlasitosti herních rozhovorů.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>ovladani</td>
+                        <td>Element je obalový a zahrnuje další elementy z oblasti ovládání hry.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>mys</td>
+                        <td>Element popisuje nastavení myši. Zda je myš nastevena pro praváka nebo pro leváka.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>citlivost_mysi</td>
+                        <td>Element popisuje míru cislivosti pohybu myši.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>klavesnice</td>
+                        <td>Element popisuje o jaký ty klávesnice jde. Zda o QWERTZ nebo QWERTY</td>
+                        <td>Omezeno na QWERTZ nebo QWERTY</td>
+                    </tr>
+                    <tr>
+                        <td>postava</td>
+                        <td>Element je obalový a obsahuje několik dalších elementů.</td>
+                        <td>žádný</td>
+                    </tr>
+                    <tr>
+                        <td>info_o_postave</td>
+                        <td>Element je obalový a obsahuje další elementy.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>sily_postavy</td>
+                        <td>Element je obalový a schromažďuje elementy z oblasti jednotlyvých sil postavy.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>zdravy_ak</td>
+                        <td>Element popisuje aktuální stav životů postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>zdravy_cel</td>
+                        <td>Element popisuje celkovou hodnotu zdravy postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>mana_ak</td>
+                        <td>Element popisuje aktuální hodnotu many postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>mana_cel</td>
+                        <td>Element popisuje celkovou hodnotu many postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>vydrz_ak</td>
+                        <td>Element popisuje aktuální hodnotu výrdže postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>vydrz_cel</td>
+                        <td>Element popisuje celkovou hodnotu výdrže postavy.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>vyzbroj</td>
+                        <td>Element je obalový a obsahuje elementy z oblasti vybavenosti postavy brněním.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>hlava</td>
+                        <td>Element popisuje výzbroj na hlavě postavy.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>hrudnik</td>
+                        <td>Element popisuje vybavenost postavy hrudním brněním.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>ruce</td>
+                        <td>Element popisuje aktuální výzbroj na rukách. (rukavice)</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>boty</td>
+                        <td>Element popisuje vybavenost postavy obuví.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>sperky</td>
+                        <td>Element je obalový element, který obsahuje elementy pro vybavení postavy šperky.</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>krk</td>
+                        <td>Element popisuje šperk na krku postavy.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>ruce</td>
+                        <td>Element popisuje šperk na ruce postavy.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>hlava</td>
+                        <td>Element popisuje ozdobu hlavy postavy.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>vyzbrojeni</td>
+                        <td>Element je obalový element popisující výzbrojení postavy. (předměty k boji a kouzla)</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>prava_ruka</td>
+                        <td>Element popisuje zbraň v pravé ruce.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>leva_ruka</td>
+                        <td>Element popisuje zbraň v levé ruce.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>data_postava</td>
+                        <td>Element je obalový a zahrnuje elementy z oblasti interních dat postavy. (množství zlata atd.)</td>
+                        <td>žádné</td>
+                    </tr>
+                    <tr>
+                        <td>mince</td>
+                        <td>Element popisuje množství naschromážděného zlata.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>titul</td>
+                        <td>Element popisuje titulování postavy ve hře.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>povolání</td>
+                        <td>Element popisuje zaměstnání postavy ve hře. (lovec, kovář, atd.)</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>aktivni_ukol</td>
+                        <td>Element popisuje zázem právě vykonávaného úkolu.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>frakce</td>
+                        <td>Element popisuje politické zaměření postyvy ve hře.</td>
+                        <td>omezeno na:
+                            <ul>
+                                <li>kralovstvi</li>
+                                <li>neutralni</li>
+                                <li>cisarstvi</li>
+                                <li>svoborni_obyvatele</li>
+                                <li>kralove_zeme</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hledany</td>
+                        <td>Element popisuje zda je postavy hledaná některou ze frakcí ve hře.</td>
+                        <td>omezeno na ANO nebo NE</td>
+                    </tr>
+                    <tr>
+                        <td>lokace</td>
+                        <td>Element popisuje pozici postavy ve hře.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                </table> 
+            </article>
+            <article>
+                <header>
+                    <h3 >Atributy</h3>
+                    <p>Popis použitých atributů</p>
+                </header>
+                <table style="width:100%" title="Tabulka atributů">
+                    <tr>
+                        <th>Atribut</th>
+                        <th>Popis</th>
+                        <th>Omezení pro atributu</th>
+                    </tr>
+                    <tr>
+                        <td>jazyk</td>
+                        <td>Atribut říká v jakém jazyce byla hra hrána.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>agrese</td>
+                        <td>Atribut popisuje agresivitu postavy. Na agresevní postavy spíž útočí jiné postavy.</td>
+                        <td>omezeno na :
+                            <ul>
+                                <li>pratelsky</li>
+                                <li>zly</li>
+                                <li>agresinvi</li>
+                                <li>vznešeny</li>
+                                <li>neutralni</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>schopnost</td>
+                        <td>Atribut popisuje bonusové schopnosti postavy.</td>
+                        <td>omezeno na :
+                            <ul>
+                                <li>zvyseni_many</li>
+                                <li>zvyseni_zdravy</li>
+                                <li>ovladani_zvirat</li>
+                                <li>odolnost_proti_magii</li>
+                                <li>odolnost_vuci_nemocem</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>titul</td>
+                        <td>Atribut popisuje titul postavy v závislosti na úrovni a zkušenostem postavy.</td>
+                        <td>omezeno na :
+                            <ul>
+                                <li>zacatecnik</li>
+                                <li>novic</li>
+                                <li>ucen</li>
+                                <li>znalec</li>
+                                <li>mistr</li>
+                                <li>velmistr</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>obnova_zdravy</td>
+                        <td>Atribut popisuje rychlost obnovy zdraví postavy.</td>
+                        <td>Datový typ DECIMAL</td>
+                    </tr>
+                    <tr>
+                        <td>obnova_many</td>
+                        <td>Atribut popisuje rychlost obnovy many postavy.</td>
+                        <td>Datový typ DECIMAL</td>
+                    </tr>
+                    <tr>
+                        <td>obnova_vydrze</td>
+                        <td>Atribut popisuje rychlost obnovy výrdže postavy.</td>
+                        <td>Datový typ DECIMAL</td>
+                    </tr>
+                    <tr>
+                        <td>odev_pod_zbroji</td>
+                        <td>Atribut popisuje typ oděvu, který je nutný mít pod brněním.</td>
+                        <td>omezeno na :
+                            <ul>
+                                <li>saty</li>
+                                <li>kozene_saty</li>
+                                <li>nic</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>vylepseni</td>
+                        <td>Atribut popisuje úroveň vylepšení zbroje.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>vyska_bot</td>
+                        <td>Atribut je doplňkový údaj pro boty postyvy.</td>
+                        <td>Omezeno na NIZKE nebo VYSOKE</td>
+                    </tr>
+                    <tr>
+                        <td>postaveni</td>
+                        <td>Atribut je doplňující údaj k titulu postavy.</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                    <tr>
+                        <td>faze_ukolu</td>
+                        <td>Atribut je doplňující údaj k řešenému úkolu. Popisuje fázi řešeného úkolu. (4. fáze úkolu-vyhledej předmět)</td>
+                        <td>žádné (text)</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section id = "transformace">
+             <header>
+                <h2>Transformace</h2>
+            </header>
+            <article>
+                <h3 >Popis transformace</h3>
+                <p>Transformace pomocí cyklu for-each vybere všechny potřebné údaje pro shromáždění dat savu hry, a pomocí HTML odešle informace o všech savech, které mají jednoznačnou hodnotu id. Dále obsahuje test na zkontrolování, zda údaj byl poslední, a případné doplnění čárky pro správnou syntaxi.</p>
+            </article>
+        </section>
+        <section id="zaver">
+             <header>
+                <h2>Závěr</h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Závěr</h3>
+                </header>
+                <p>
+                    Jelikož se nejednalo o mé vůbec první seznámení XML soubory(XML soubory jsem využil v rámci programování), tak jsem si práci s nimi opět zopakoval. Ovšem s tím související XML schéma, XSL transformace byla pro mě novinka.   
+                </p>
+            </article>
+
+        </section>
+    </main>
+    <footer id="paticka">
+        Copyright, Author: Jan Vejvoda &copy; 2017
+    </footer>
+</body>
 </html>
+
