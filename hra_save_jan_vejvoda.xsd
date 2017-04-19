@@ -57,7 +57,7 @@ and open the template in the editor.
                                         <xs:enumeration value="zvyseni_zdravi" />
                                         <xs:enumeration value="ovladani_zvirat" />
                                         <xs:enumeration value="odolnost_proti_magii" />
-                                        <xs:enumeration value="odalnost_vuci_nemocem" />
+                                        <xs:enumeration value="odolnost_vuci_nemocem" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:attribute>
